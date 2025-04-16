@@ -81,10 +81,26 @@ namespace WF.Login
         {
             var resposta = MessageBox.Show("Deseja encerrar o programa?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (resposta == DialogResult.Yes)
+            if (resposta != DialogResult.No)
             {
                 Application.Exit();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            var resposta = MessageBox.Show("Deseja encerrar o programa?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resposta != DialogResult.No)
+            {
+                Application.Exit();
+            }
+
         }
     }
 }

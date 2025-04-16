@@ -39,6 +39,7 @@
             label4 = new Label();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
+            button2 = new Button();
             button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -164,18 +165,26 @@
             textBox4.Enter += textBox4_Enter;
             textBox4.Leave += textBox4_Leave;
             // 
+            // button2
+            // 
+            button2.Font = new Font("Arial Narrow", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(891, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(28, 30);
+            button2.TabIndex = 5;
+            button2.Text = "__";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // button1
             // 
-            button1.BackColor = Color.White;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 8F);
-            button1.Location = new Point(930, 12);
+            button1.Location = new Point(925, 12);
             button1.Name = "button1";
-            button1.Size = new Size(28, 34);
-            button1.TabIndex = 15;
+            button1.Size = new Size(28, 30);
+            button1.TabIndex = 16;
             button1.Text = "X";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // Form1
             // 
@@ -184,6 +193,7 @@
             BackColor = Color.Black;
             ClientSize = new Size(981, 514);
             Controls.Add(button1);
+            Controls.Add(button2);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(label4);
@@ -218,6 +228,7 @@
         private Label label4;
         private TextBox textBox3;
         private TextBox textBox4;
+        private Button button2;
         private Button button1;
     }
 }
