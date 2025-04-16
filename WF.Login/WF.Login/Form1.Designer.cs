@@ -32,13 +32,14 @@
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             textBox2 = new TextBox();
-            CADASTRAR = new Button();
+            Botão = new Button();
             linkLabel1 = new LinkLabel();
             linkLabel2 = new LinkLabel();
             label3 = new Label();
             label4 = new Label();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
+            button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -50,7 +51,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(419, 492);
+            panel1.Size = new Size(419, 514);
             panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -73,39 +74,45 @@
             textBox2.Size = new Size(316, 24);
             textBox2.TabIndex = 2;
             // 
-            // CADASTRAR
+            // Botão
             // 
-            CADASTRAR.BackColor = Color.DimGray;
-            CADASTRAR.FlatAppearance.BorderSize = 0;
-            CADASTRAR.FlatStyle = FlatStyle.Flat;
-            CADASTRAR.Font = new Font("Segoe UI", 15F);
-            CADASTRAR.ForeColor = Color.Black;
-            CADASTRAR.Location = new Point(457, 279);
-            CADASTRAR.Name = "CADASTRAR";
-            CADASTRAR.Size = new Size(478, 48);
-            CADASTRAR.TabIndex = 3;
-            CADASTRAR.Text = "ENTRAR";
-            CADASTRAR.UseVisualStyleBackColor = false;
+            Botão.BackColor = Color.DimGray;
+            Botão.Cursor = Cursors.Hand;
+            Botão.DialogResult = DialogResult.Continue;
+            Botão.FlatAppearance.BorderSize = 0;
+            Botão.FlatStyle = FlatStyle.Flat;
+            Botão.Font = new Font("Segoe UI", 15F);
+            Botão.ForeColor = Color.Black;
+            Botão.Location = new Point(457, 279);
+            Botão.Name = "Botão";
+            Botão.Size = new Size(478, 48);
+            Botão.TabIndex = 3;
+            Botão.Text = "ENTRAR";
+            Botão.UseVisualStyleBackColor = false;
             // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
+            linkLabel1.Cursor = Cursors.Hand;
             linkLabel1.Location = new Point(631, 374);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(141, 25);
-            linkLabel1.TabIndex = 0;
+            linkLabel1.TabIndex = 4;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Recuperar senha";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // linkLabel2
             // 
             linkLabel2.AutoSize = true;
+            linkLabel2.Cursor = Cursors.Hand;
             linkLabel2.Location = new Point(656, 428);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Size = new Size(87, 25);
-            linkLabel2.TabIndex = 7;
+            linkLabel2.TabIndex = 0;
             linkLabel2.TabStop = true;
             linkLabel2.Text = "Cadastrar";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
             // label3
             // 
@@ -131,12 +138,13 @@
             // 
             textBox3.BackColor = Color.Black;
             textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Cursor = Cursors.IBeam;
             textBox3.Font = new Font("Segoe UI", 15F);
             textBox3.ForeColor = Color.DimGray;
             textBox3.Location = new Point(457, 106);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(472, 40);
-            textBox3.TabIndex = 10;
+            textBox3.TabIndex = 1;
             textBox3.Text = "USUARIO:";
             textBox3.Enter += textBox3_Enter;
             textBox3.Leave += textBox3_Leave;
@@ -145,36 +153,53 @@
             // 
             textBox4.BackColor = Color.Black;
             textBox4.BorderStyle = BorderStyle.None;
+            textBox4.Cursor = Cursors.IBeam;
             textBox4.Font = new Font("Segoe UI", 15F);
             textBox4.ForeColor = Color.DimGray;
             textBox4.Location = new Point(454, 182);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(472, 40);
-            textBox4.TabIndex = 11;
+            textBox4.TabIndex = 2;
             textBox4.Text = "SENHA:";
             textBox4.Enter += textBox4_Enter;
             textBox4.Leave += textBox4_Leave;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.White;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 8F);
+            button1.Location = new Point(930, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(28, 34);
+            button1.TabIndex = 15;
+            button1.Text = "X";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(981, 492);
+            ClientSize = new Size(981, 514);
+            Controls.Add(button1);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(linkLabel2);
             Controls.Add(linkLabel1);
-            Controls.Add(CADASTRAR);
+            Controls.Add(Botão);
             Controls.Add(textBox2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
-            Opacity = 0.85D;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Krav maga Company";
+            MouseDown += KravMaga_MouseDown;
+            MouseMove += KravMaga_MouseMove;
+            MouseUp += KravMaga_MouseUp;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -185,7 +210,7 @@
 
         private Panel panel1;
         private TextBox textBox2;
-        private Button CADASTRAR;
+        private Button Botão;
         private LinkLabel linkLabel1;
         private PictureBox pictureBox1;
         private LinkLabel linkLabel2;
@@ -193,5 +218,6 @@
         private Label label4;
         private TextBox textBox3;
         private TextBox textBox4;
+        private Button button1;
     }
 }
