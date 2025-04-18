@@ -71,7 +71,7 @@ namespace WF.Login
         {
             ProcessStartInfo psi = new ProcessStartInfo
             {
-                FileName = "https://www.bing.com/search?qs=LS&pq=cadastro+u&sk=CSYN1&sc=13-10&q=cadastro+unico&cvid=7f85ccd1fb74404f9fdbe27f0b221a2e&gs_lcrp=EgRlZGdlKgYIABAAGEAyBggAEAAYQDIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMggICBDpBxj8VdIBCDcwNTNqMGo5qAIIsAIB&FORM=ANAB01&PC=U531",
+                FileName = "https://www.google.com.br/",
                 UseShellExecute = true
             };
             Process.Start(psi);
@@ -101,6 +101,13 @@ namespace WF.Login
                 Application.Exit();
             }
 
+        }
+
+        private void Botão_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var formPrincipal = new FormPrincipal();
+            formPrincipal.Show();
         }
     }
 }

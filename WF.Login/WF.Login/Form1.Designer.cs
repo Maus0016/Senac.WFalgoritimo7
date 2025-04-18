@@ -52,7 +52,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(419, 514);
+            panel1.Size = new Size(419, 524);
             panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -90,6 +90,7 @@
             Botão.TabIndex = 3;
             Botão.Text = "ENTRAR";
             Botão.UseVisualStyleBackColor = false;
+            Botão.Click += Botão_Click;
             // 
             // linkLabel1
             // 
@@ -191,7 +192,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(981, 514);
+            ClientSize = new Size(983, 524);
             Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(textBox4);
@@ -204,6 +205,7 @@
             Controls.Add(textBox2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Krav maga Company";

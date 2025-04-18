@@ -59,5 +59,85 @@ namespace WF.Login.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3146786_instagram_logo_icon {
+            get {
+                object obj = ResourceManager.GetObject("3146786_instagram_logo_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3558117_facility_food_hamburger_sell_truck_icon {
+            get {
+                object obj = ResourceManager.GetObject("3558117_facility_food_hamburger_sell_truck_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4102606_applications_media_social_whatsapp_icon {
+            get {
+                object obj = ResourceManager.GetObject("4102606_applications_media_social_whatsapp_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4394728_athlete_boxing_fight_gloves_gym_icon {
+            get {
+                object obj = ResourceManager.GetObject("4394728_athlete_boxing_fight_gloves_gym_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4394728_athlete_boxing_fight_gloves_gym_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("4394728_athlete_boxing_fight_gloves_gym_icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4783070_flag_leaf_tree_icon {
+            get {
+                object obj = ResourceManager.GetObject("4783070_flag_leaf_tree_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _479481_kunai_ninja_knife_samurai_icon {
+            get {
+                object obj = ResourceManager.GetObject("479481_kunai_ninja_knife_samurai_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8679756_sword_fill_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("8679756_sword_fill_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
