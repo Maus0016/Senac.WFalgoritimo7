@@ -230,6 +230,7 @@
             Name = "FormPrincipal";
             Text = "FormPrincipal";
             Load += FormPrincipal_Load;
+            MouseDown += FormPrincipal_MouseDown;
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
