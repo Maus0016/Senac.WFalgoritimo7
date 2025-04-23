@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             panel1 = new Panel();
-            button5 = new Button();
-            button4 = new Button();
-            button6 = new Button();
+            btnDuvidas = new Button();
+            btnQuemSomos = new Button();
+            btnAssinaturas = new Button();
             btnProdutos = new Button();
-            button1 = new Button();
+            btnPlanos = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
             label1 = new Label();
@@ -52,65 +52,65 @@
             // panel1
             // 
             panel1.BackColor = Color.Black;
-            panel1.Controls.Add(button5);
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button6);
+            panel1.Controls.Add(btnDuvidas);
+            panel1.Controls.Add(btnQuemSomos);
+            panel1.Controls.Add(btnAssinaturas);
             panel1.Controls.Add(btnProdutos);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btnPlanos);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(281, 450);
             panel1.TabIndex = 0;
             // 
-            // button5
+            // btnDuvidas
             // 
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Century Gothic", 8F);
-            button5.ForeColor = Color.White;
-            button5.Image = (Image)resources.GetObject("button5.Image");
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(12, 357);
-            button5.Name = "button5";
-            button5.Size = new Size(261, 49);
-            button5.TabIndex = 4;
-            button5.Text = "Duvidas frequentes";
-            button5.UseVisualStyleBackColor = true;
+            btnDuvidas.FlatAppearance.BorderSize = 0;
+            btnDuvidas.FlatStyle = FlatStyle.Flat;
+            btnDuvidas.Font = new Font("Century Gothic", 8F);
+            btnDuvidas.ForeColor = Color.White;
+            btnDuvidas.Image = (Image)resources.GetObject("btnDuvidas.Image");
+            btnDuvidas.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDuvidas.Location = new Point(12, 357);
+            btnDuvidas.Name = "btnDuvidas";
+            btnDuvidas.Size = new Size(261, 49);
+            btnDuvidas.TabIndex = 4;
+            btnDuvidas.Text = "Duvidas frequentes";
+            btnDuvidas.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnQuemSomos
             // 
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Century Gothic", 8F);
-            button4.ForeColor = Color.White;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(12, 302);
-            button4.Name = "button4";
-            button4.Size = new Size(261, 49);
-            button4.TabIndex = 4;
-            button4.Text = "Quem somos ?";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            btnQuemSomos.FlatAppearance.BorderSize = 0;
+            btnQuemSomos.FlatStyle = FlatStyle.Flat;
+            btnQuemSomos.Font = new Font("Century Gothic", 8F);
+            btnQuemSomos.ForeColor = Color.White;
+            btnQuemSomos.Image = (Image)resources.GetObject("btnQuemSomos.Image");
+            btnQuemSomos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnQuemSomos.Location = new Point(12, 302);
+            btnQuemSomos.Name = "btnQuemSomos";
+            btnQuemSomos.Size = new Size(261, 49);
+            btnQuemSomos.TabIndex = 4;
+            btnQuemSomos.Text = "Quem somos ?";
+            btnQuemSomos.UseVisualStyleBackColor = true;
+            btnQuemSomos.Click += button4_Click;
             // 
-            // button6
+            // btnAssinaturas
             // 
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatAppearance.MouseDownBackColor = Color.White;
-            button6.FlatAppearance.MouseOverBackColor = Color.Gray;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Century Gothic", 8F);
-            button6.ForeColor = Color.White;
-            button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(12, 153);
-            button6.Name = "button6";
-            button6.Size = new Size(261, 49);
-            button6.TabIndex = 4;
-            button6.Text = "Assinaturas";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button2_Click;
+            btnAssinaturas.FlatAppearance.BorderSize = 0;
+            btnAssinaturas.FlatAppearance.MouseDownBackColor = Color.White;
+            btnAssinaturas.FlatAppearance.MouseOverBackColor = Color.Gray;
+            btnAssinaturas.FlatStyle = FlatStyle.Flat;
+            btnAssinaturas.Font = new Font("Century Gothic", 8F);
+            btnAssinaturas.ForeColor = Color.White;
+            btnAssinaturas.Image = (Image)resources.GetObject("btnAssinaturas.Image");
+            btnAssinaturas.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAssinaturas.Location = new Point(12, 153);
+            btnAssinaturas.Name = "btnAssinaturas";
+            btnAssinaturas.Size = new Size(261, 49);
+            btnAssinaturas.TabIndex = 4;
+            btnAssinaturas.Text = "Assinaturas";
+            btnAssinaturas.UseVisualStyleBackColor = true;
+            btnAssinaturas.Click += button2_Click;
             // 
             // btnProdutos
             // 
@@ -130,20 +130,20 @@
             btnProdutos.UseVisualStyleBackColor = true;
             btnProdutos.Click += button2_Click;
             // 
-            // button1
+            // btnPlanos
             // 
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Century Gothic", 9F);
-            button1.ForeColor = Color.White;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(12, 45);
-            button1.Name = "button1";
-            button1.Size = new Size(261, 49);
-            button1.TabIndex = 3;
-            button1.Text = "Planos";
-            button1.UseVisualStyleBackColor = true;
+            btnPlanos.FlatAppearance.BorderSize = 0;
+            btnPlanos.FlatStyle = FlatStyle.Flat;
+            btnPlanos.Font = new Font("Century Gothic", 9F);
+            btnPlanos.ForeColor = Color.White;
+            btnPlanos.Image = (Image)resources.GetObject("btnPlanos.Image");
+            btnPlanos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPlanos.Location = new Point(12, 45);
+            btnPlanos.Name = "btnPlanos";
+            btnPlanos.Size = new Size(261, 49);
+            btnPlanos.TabIndex = 3;
+            btnPlanos.Text = "Planos";
+            btnPlanos.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -246,15 +246,15 @@
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
-        private Button button1;
-        private Button button5;
-        private Button button4;
+        private Button btnPlanos;
+        private Button btnDuvidas;
+        private Button btnQuemSomos;
         private Button btnProdutos;
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private Button button6;
+        private Button btnAssinaturas;
     }
 }
