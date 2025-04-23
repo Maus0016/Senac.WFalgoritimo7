@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace WF.Login
 {
-    public partial class FormPrincipal : Form
+    public partial class FormQuemSomos : Form
     {
 
-        public FormPrincipal()
+        public FormQuemSomos()
         {
             InitializeComponent();
         }

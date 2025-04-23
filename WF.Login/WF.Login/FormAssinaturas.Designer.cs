@@ -1,6 +1,7 @@
 ﻿namespace WF.Login
 {
-    partial class FormPrincipal
+    partial class FormAssinaturas
+
     {
         /// <summary>
         /// Required designer variable.
@@ -147,7 +148,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.White;
+            panel2.BackColor = Color.Brown;
             panel2.Location = new Point(281, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(519, 33);

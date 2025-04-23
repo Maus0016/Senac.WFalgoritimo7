@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace WF.Login
 {
-    public partial class FormPrincipal : Form
+    public partial class FormProdutos : Form
     {
-
-        public FormPrincipal()
+        //resx recursos do formulario (deposito)
+        public FormProdutos()
         {
             InitializeComponent();
         }

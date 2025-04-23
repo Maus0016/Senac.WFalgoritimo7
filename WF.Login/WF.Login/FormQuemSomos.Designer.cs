@@ -1,6 +1,6 @@
 ﻿namespace WF.Login
 {
-    partial class FormPrincipal
+    partial class FormQuemSomos
     {
         /// <summary>
         /// Required designer variable.
