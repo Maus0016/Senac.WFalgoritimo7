@@ -40,9 +40,9 @@ namespace WF.Login
 
         private void FormPrincipal_MouseDown(object sender, MouseEventArgs e)
         {
-           // dragging = true;
-           // dragCursorPoint = Cursor.Position;
-           // dragFormPoint = this.Location;
+            // dragging = true;
+            // dragCursorPoint = Cursor.Position;
+            // dragFormPoint = this.Location;
         }
 
         private void FormPrincipal_MouseMove(object sender, MouseEventArgs e)
@@ -57,6 +57,15 @@ namespace WF.Login
         private void FormPrincipal_MouseUp(object sender, MouseEventArgs e)
         {
             //dragging = false;
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            //Oculta a tela principal
+            this.Hide();
+            //cria a tela de produtos e a exibe
+
+            new FormPrincipal().Show();
         }
     }
 }

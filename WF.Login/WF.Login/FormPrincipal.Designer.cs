@@ -42,6 +42,7 @@
             label2 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            textBox1 = new TextBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -214,11 +215,20 @@
             pictureBox3.TabIndex = 4;
             pictureBox3.TabStop = false;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(432, 243);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(150, 31);
+            textBox1.TabIndex = 5;
+            textBox1.Text = "Principal";
+            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(label2);
@@ -256,5 +266,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Button btnAssinaturas;
+        private TextBox textBox1;
     }
 }

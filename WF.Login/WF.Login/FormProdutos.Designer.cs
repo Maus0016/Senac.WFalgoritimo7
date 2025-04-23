@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProdutos));
             panel1 = new Panel();
             button5 = new Button();
             button4 = new Button();
@@ -42,6 +42,8 @@
             label2 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            btnVoltar = new Button();
+            textBox1 = new TextBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -214,11 +216,31 @@
             pictureBox3.TabIndex = 4;
             pictureBox3.TabStop = false;
             // 
-            // FormPrincipal
+            // btnVoltar
+            // 
+            btnVoltar.Location = new Point(711, 404);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(74, 34);
+            btnVoltar.TabIndex = 5;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(334, 246);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(150, 31);
+            textBox1.TabIndex = 6;
+            textBox1.Text = "produtos";
+            // 
+            // FormProdutos
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
+            Controls.Add(btnVoltar);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(label2);
@@ -227,7 +249,7 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "FormPrincipal";
+            Name = "FormProdutos";
             Text = "FormPrincipal";
             Load += FormPrincipal_Load;
             MouseDown += FormPrincipal_MouseDown;
@@ -256,5 +278,7 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Button button6;
+        private Button btnVoltar;
+        private TextBox textBox1;
     }
 }
