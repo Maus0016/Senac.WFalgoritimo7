@@ -25,7 +25,10 @@ namespace WF.Login
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            // oculta a tela principal
+            this.Hide();
+            // cria a tela de produtos e a exibe
+            new FormProdutos().Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

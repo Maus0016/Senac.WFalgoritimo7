@@ -33,7 +33,7 @@
             button5 = new Button();
             button4 = new Button();
             button6 = new Button();
-            button2 = new Button();
+            btnProdutos = new Button();
             button1 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
@@ -55,7 +55,7 @@
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button6);
-            panel1.Controls.Add(button2);
+            panel1.Controls.Add(btnProdutos);
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
@@ -112,23 +112,23 @@
             button6.UseVisualStyleBackColor = true;
             button6.Click += button2_Click;
             // 
-            // button2
+            // btnProdutos
             // 
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseDownBackColor = Color.White;
-            button2.FlatAppearance.MouseOverBackColor = Color.Gray;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century Gothic", 8F);
-            button2.ForeColor = Color.White;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(12, 100);
-            button2.Name = "button2";
-            button2.Size = new Size(261, 49);
-            button2.TabIndex = 4;
-            button2.Text = "Produtos";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnProdutos.FlatAppearance.BorderSize = 0;
+            btnProdutos.FlatAppearance.MouseDownBackColor = Color.White;
+            btnProdutos.FlatAppearance.MouseOverBackColor = Color.Gray;
+            btnProdutos.FlatStyle = FlatStyle.Flat;
+            btnProdutos.Font = new Font("Century Gothic", 8F);
+            btnProdutos.ForeColor = Color.White;
+            btnProdutos.Image = (Image)resources.GetObject("btnProdutos.Image");
+            btnProdutos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnProdutos.Location = new Point(12, 100);
+            btnProdutos.Name = "btnProdutos";
+            btnProdutos.Size = new Size(261, 49);
+            btnProdutos.TabIndex = 4;
+            btnProdutos.Text = "Produtos";
+            btnProdutos.UseVisualStyleBackColor = true;
+            btnProdutos.Click += button2_Click;
             // 
             // button1
             // 
@@ -249,7 +249,7 @@
         private Button button1;
         private Button button5;
         private Button button4;
-        private Button button2;
+        private Button btnProdutos;
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
